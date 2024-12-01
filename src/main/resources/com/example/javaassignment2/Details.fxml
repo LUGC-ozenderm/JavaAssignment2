@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.javaassignment2.Controller.DetailsController" stylesheets="@style.css">
+    <children>
+        <ScrollPane fitToWidth="true" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" styleClass="details-scrollpane">
+            <content>
+                <VBox spacing="10" alignment="CENTER" styleClass="details-vbox">
+                    <padding>
+                        <Insets top="20" right="20" bottom="20" left="20" />
+                    </padding>
+                    <children>
+                        <ImageView fx:id="posterImageView" fitWidth="200" fitHeight="300" styleClass="poster-image"/>
+                        <Label fx:id="titleLabel" styleClass="title-label" wrapText="true"/>
+                        <Label fx:id="genreLabel" wrapText="true"/>
+                        <Label fx:id="starringLabel" wrapText="true"/>
+                        <Label fx:id="lengthLabel"/>
+                        <Label fx:id="ratingLabel"/>
+                        <Text fx:id="descriptionText" wrappingWidth="400" styleClass="description-text"/>
+                        <Button text="Return" onAction="#handleReturnButton"/>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

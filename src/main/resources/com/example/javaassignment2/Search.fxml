@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.javaassignment2.Controller.SearchController" stylesheets="@style.css">
+    <children>
+        <ListView fx:id="movieListView" layoutX="10.0" layoutY="10.0" prefWidth="580.0" prefHeight="380.0" />
+    </children>
+</AnchorPane>
